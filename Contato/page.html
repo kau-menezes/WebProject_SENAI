@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Estoque</title>
+    <script src="../Contato/script.js"></script>
+    
 </head>
+
 <body>
-    <h1>menu/</h1>
+    <a href="../Menu/page.html">VOLTAR</a>
+
+    <h1>Contato</h1>
+
+    <h2>Insira os dados iniciais para envio</h2>
+
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome:">
+
+    <br><br>
+
+    <label for="observações"> Digite sua observação:</label>
+    <textarea id="mensagem" placeholder="Digite sua observação:"></textarea>  
+
+    <br><br>
+
+    <button onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
+
+    <br><br>
+
+    <p>Nome: <span id="confNome"></span></p>
+    <p>Observação: <span id="confMsg"></span></p>
+    <p>Data: <span id="confDate"></span></p>
+    
+    <br><br>
+
+    <button onclick="enviar()">Enviar Mensagem</button>
+
 </body>
 </html>

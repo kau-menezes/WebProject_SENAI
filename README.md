@@ -8,3 +8,5 @@ code . -> abre o vscode a partir do terminal do git Bash
 ls -> informa o diretório
 
 cd and cd .. -> transita entre diretórios
+
+###  <li><a href="../Contato/page.html"> Enviar ao contato </li>
