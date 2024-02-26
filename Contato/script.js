@@ -37,5 +37,7 @@ function enviar(){
 
     window.open(link, "_blank")
 
+    alert("Mensagem enviada!")
+
 }
 
