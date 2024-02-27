@@ -15,11 +15,11 @@ body {
 }
 
 h1 { 
-     color: #b6710b; 
-     font-family: 'Helvetica Neue', sans-serif; 
+     color: #EAA328; 
+     font-family: "Anton", sans-serif;
      font-size: 90px; 
      font-weight: bold; 
-     letter-spacing: -1px; 
+     letter-spacing: 3px; 
      line-height: 1; 
      text-align: center; 
 
@@ -48,21 +48,41 @@ table {
     
 }
 
+select {
+    padding: 10px;
+    border: 2px solid #EAA328;
+    border-radius: 4px;
+    font-size: 15px;
+    /* width: 120%; */
+    text-align: center;
+
+}
+
+input[type=number] {
+    padding: 10px;
+    border: 2px solid #EAA328;
+    border-radius: 4px;
+    font-size: 15px;
+    /* width: 100%; */
+    text-align: center;
+    max-width: 171PX;
+}
+
 thead {
     padding: 20px;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    word-spacing: 0%;
+    word-spacing: 15PX;
     letter-spacing: 1px; 
     text-align: center;
-    width: 100%;
+    width: 1000%;
     border-bottom: 1px solid #ddd;
 
 }
 
 
 button {
-    background-color: #b6710b; 
+    background-color: #EAA328; 
     border: 2px solid #593908;
     border-radius: 8px;
     color: white;
@@ -82,27 +102,31 @@ button {
 } 
 
 
-/* th, td {
+th, td {
     padding: 15px;
-    text-align: left;
+    text-align: left; 
     border-bottom: 1px solid #ddd;
-    tr:hover {background-color: #b6710b;}
-  } */
 
-input[type=text] {
-    padding: 10px;
-    border: 2px solid #b6710b;
-    border-radius: 4px;
-    font-size: 15px;
-    width: 100%;
-    text-align: center;
+  }
+
+  a:link {
+    padding: 15px;
+    font-family: 'Helvetica Neue', sans-serif; 
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+
 }
 
-input[type=number] {
-    padding: 10px;
-    border: 2px solid #b6710b;
-    border-radius: 4px;
-    font-size: 15px;
-    width: 100%;
-    text-align: center;
+a:hover {
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
 }
+

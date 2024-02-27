@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Estoque</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
     <script src="script.js"></script>
 
@@ -14,18 +16,27 @@
     <h1>Estoque</h1>
     <br>
     <div>
-        <input type="text" placeholder="Nome do produto:" id="nome">
-        <br><br>
-        <input type="number" placeholder="Valor do produto:" id="valor">
-        <br><br>
+        <!-- add o id -->
+        <select class="form-select" aria-label="Default select example" id="nome"> 
+            <option selected>Selecione uma opção:</option>
+            <option value="Pão">Pão</option>
+            <option value="Carne">Carne</option>
+            <option value="Queijo">Queijo</option>
+            <option value="Alface">Alface</option>
+            <option value="Tomate">Tomate</option>
+            <option value="Bacon">Bacon</option>
+            <option value="Refri">Refri</option>
+        </select>
+    </div>
+    <div>
         <input type="number" placeholder="Quantidade:" id="quantidade">
         <br><br>
 
     </div>
     <div>
-        <button onclick="adicionarItem()">👇</button>
+        <button onclick="adicionarItem()">⬇</button>
     </div>
-    <br>
+    <!-- <br> -->
     <div>
         <table id="tabela">
             <thead>

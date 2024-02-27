@@ -14,12 +14,12 @@ body {
 
 }
 
-h1 { 
-     color: #b6710b; 
-     font-family: 'Helvetica Neue', sans-serif; 
+h1 {  
+     color: #EAA328; 
+     font-family: "Anton", sans-serif;
      font-size: 90px; 
      font-weight: bold; 
-     letter-spacing: -1px; 
+     letter-spacing: 3px; 
      line-height: 1; 
      text-align: center;
 }
@@ -32,8 +32,23 @@ ul {
 
 }
 
-li {
-    background-color: #b6710b; 
+li{
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+
+}
+
+li:hover{
+    background-color: #EAA328; 
     border: 2px solid #593908;
     border-radius: 8px;
     color: white;
@@ -46,3 +61,9 @@ li {
     font-family: 'Helvetica Neue', sans-serif;
 
 }
+
+#burgui_3 {
+    width: 500px;
+    align: right;
+    
+    }

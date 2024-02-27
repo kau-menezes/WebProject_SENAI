@@ -15,18 +15,19 @@ body {
 }
 
 h1 { 
-     color: #b6710b; 
-     font-family: 'Helvetica Neue', sans-serif; 
+     color: #EAA328; 
+     font-family: "Anton", sans-serif;
      font-size: 90px; 
      font-weight: bold; 
-     letter-spacing: -1px; 
+     letter-spacing: 3px; 
      line-height: 1; 
      text-align: center;
 }
 
 h2 { 
     color: #111; 
-    font-family: 'Open Sans', sans-serif; 
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -1px;
     font-size: 30px; 
     font-weight: 300; 
     line-height: 32px; 
@@ -35,7 +36,7 @@ h2 {
 }
 
 button {
-    background-color: #b6710b; 
+    background-color: #EAA328; 
     border: 2px solid #593908;
     border-radius: 8px;
     color: white;
@@ -48,6 +49,8 @@ button {
     font-family: 'Helvetica Neue', sans-serif;
   }
 
+
+  
 label {
     font-family: 'Helvetica Neue', sans-serif; 
      font-size: 16px; 
@@ -64,22 +67,43 @@ p {
 
 input[type=text] {
     padding: 12px 20px;
-    border: 2px solid #b6710b;
+    border: 2px solid #EAA328;
     border-radius: 4px;
     font-size: 15px;
     height: 30px;
-    width: 25%;
+    max-width: 195px;
     text-align: left;
 }
 
 
 textarea {
     font-family: 'Helvetica Neue', sans-serif; 
-    width: 25%;
+    max-width: 236px;
     height: 80px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #b6710b;
+    border: 2px solid #EAA328;
     border-radius: 4px;
-    resize: none;
   }
+
+  a:link {
+    padding: 15px;
+    font-family: 'Helvetica Neue', sans-serif; 
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+
+  }
+
+a:hover {
+    padding: 15px;
+    font-family: 'Helvetica Neue', sans-serif; 
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+
+}
