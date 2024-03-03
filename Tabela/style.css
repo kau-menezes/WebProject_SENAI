@@ -1,18 +1,24 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+
+
 body {
-  
+    width: 100vw;
+    height: 100vh;
+
+    padding: 100px 50px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    gap: 2vh;
-
+    gap: 50px;
 }
+
+
 
 h1 { 
      color: #EAA328; 
@@ -35,20 +41,18 @@ h2 {
     text-align: center; 
 }
 
-table {
-    padding: 15px;
-    font-family: 'Helvetica Neue', sans-serif;
-    line-height: 25px;
-    font-size: 14px;
-    gap: 2vh;
-    letter-spacing: -1px; 
-    text-align: center;
-    width: 100%;
 
-    
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 select {
+    max-width: max-content;
     padding: 10px;
     border: 2px solid #EAA328;
     border-radius: 4px;
@@ -68,20 +72,39 @@ input[type=number] {
     max-width: 171PX;
 }
 
-thead {
-    padding: 20px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 20px;
-    word-spacing: 15PX;
-    letter-spacing: 1px; 
-    text-align: center;
-    width: 1000%;
-    border-bottom: 1px solid #ddd;
 
+
+a:link {
+    max-width: max-content;
+
+    padding: 15px;
+    font-family: 'Helvetica Neue', sans-serif; 
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+
+    position: absolute;
+    top: 100px;
+    left: 30px;
 }
 
+a:hover {
+    max-width: max-content;
+
+    padding: 15px;
+    font-family: "Poppins", sans-serif;
+    background-color: #EAA328; 
+    border: 2px solid #593908;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
 
 button {
+    max-width: max-content;
+
     background-color: #EAA328; 
     border: 2px solid #593908;
     border-radius: 8px;
@@ -93,40 +116,32 @@ button {
     font-size: 16px;
     font-weight: bold;
     font-family: 'Helvetica Neue', sans-serif;
-  }
-
- table td {
-    border-bottom: 1px solid #ddd;
-    font-size: 15px;
-
-} 
+}
 
 
+
+table {
+    width: 95%;
+    max-width: 900px;
+    border-spacing: 0;
+
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+thead {
+    width: 1000%;
+    border: 3px solid #111;
+    
+    font-size: 20px;
+    padding: 20px;
+}
 th, td {
-    padding: 15px;
-    text-align: left; 
-    border-bottom: 1px solid #ddd;
-
-  }
-
-  a:link {
-    padding: 15px;
-    font-family: 'Helvetica Neue', sans-serif; 
-    background-color: #EAA328; 
-    border: 2px solid #593908;
-    border-radius: 8px;
-    color: black;
-    font-weight: bold;
-
+    padding: 5px 3px;
+    text-align: center;
 }
-
-a:hover {
-    padding: 15px;
-    font-family: "Poppins", sans-serif;
-    background-color: #EAA328; 
-    border: 2px solid #593908;
-    border-radius: 8px;
-    color: white;
-    font-weight: bold;
+th {
+    border: 3px solid #111;
 }
-
+td {
+    border: 1px solid #111;
+}

@@ -1,47 +1,56 @@
 function adicionarItem(){
     //Obter valores dos campos digitados
-    var nome = document.getElementById("nome").value;
+    let nome = document.getElementById("nome").value;
     
-    var quantidade = document.getElementById("quantidade").value;
-    var valorDoProduto = 0
+    let quantidade = document.getElementById("quantidade").value;
+    let valorDoProduto
+    let numeroDoproduto
 
-switch (nome) {
+    switch (nome) {
 
     case "Pão":
-        valorDoProduto = 2,00
-       
+        valorDoProduto = 2.00
+        numeroDoproduto = 1
         break;
-    case "Carne":
-        valorDoProduto = 20,00
         
-        break;
+    case "Carne":
+        valorDoProduto = 20.00
+        numeroDoproduto = 2
+        break
 
     case "Queijo":
-        valorDoProduto = 1,00
-            
+        valorDoProduto = 1.00
+        numeroDoproduto = 3
         break;
+
     case "Alface":
-        valorDoProduto = 1,00
-    
+        valorDoProduto = 1.00
+        numeroDoproduto = 4
         break;
 
     case "Tomate":
-    valorDoProduto = 1,00
-    
+    valorDoProduto = 1.00
+    numeroDoproduto = 5
+    break;
+
+    case "Abacate":
+    valorDoProduto = 1.00
+    numeroDoproduto = 6
     break;
 
     case "Bacon":
-        valorDoProduto = 4,00
-        
-        break;
-
-    case "Refri":
-    valorDoProduto = 5,00
-    
+    valorDoProduto = 4.00
+    numeroDoproduto = 7
     break;
 
-}
-var total = quantidade * valorDoProduto;
+    case "Refri":
+    valorDoProduto = 5.00
+    numeroDoproduto = 8
+    break;
+
+    }
+
+    let total = quantidade * valorDoProduto;
 
     //Validar de todas existem
     if(!nome || !quantidade){
@@ -50,26 +59,36 @@ var total = quantidade * valorDoProduto;
     }
 
     //  Criar a tabela, mas precisamente uma linha na tabela
-    var tabela = document.getElementById("tabela")
-    .getElementsByTagName("tbody")[0];
-    var novaLinha = tabela.insertRow(tabela.rows.length);
-    var celulaDescrição = novaLinha.insertCell(0);
-    var celulaValor = novaLinha.insertCell(1);
-    var celulaQuantidade = novaLinha.insertCell(2);
-    var celulaTotal = novaLinha.insertCell(3);
+    let tabela = document.getElementById("tabela").getElementsByTagName("tbody")[0];
+    let novaLinha = tabela.insertRow(tabela.rows.length);
+    let celulaNumber = novaLinha.insertCell(0);
+    let celulaDescrição = novaLinha.insertCell(1);
+    let celulaValor = novaLinha.insertCell(2);
+    let celulaQuantidade = novaLinha.insertCell(3);
+    let celulaTotal = novaLinha.insertCell(4);
 
 
     // Colocar valores nas celulas
+    celulaNumber.innerHTML = numeroDoproduto;
     celulaDescrição.innerHTML = nome;
     celulaValor.innerHTML = "R$ " + valorDoProduto;
     celulaQuantidade.innerHTML = quantidade;
     celulaTotal.innerHTML = "R$ " + total;
+
+    document.getElementById("nome").value = '';
+    document.getElementById("quantidade").value = '';
+    document.getElementById("nome").focus();
 }
 
 function exportarParaExcel(){
-    var tabela = document.getElementById("tabela");
-    var nomeArquivo = "tabela_produtos.xlsx";
-    var wb = XLSX.utils.table_to_book(tabela, {sheet: "Estoque"});
+    let tabela = document.getElementById("tabela");
+    let nomeArquivo = "tabela_produtos.xlsx";
+    let wb = XLSX.utils.table_to_book(tabela, {sheet: "Estoque"});
     XLSX.writeFile(wb, nomeArquivo);
 }
 
+document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    adicionarItem()
+})
