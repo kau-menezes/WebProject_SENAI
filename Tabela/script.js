@@ -34,8 +34,8 @@ function adicionarItem(){
     break;
 
     case "Abacate":
-    valorDoProduto = 1.00
-    numeroDoproduto = 6
+        valorDoProduto = 1.00
+        numeroDoproduto = 6
     break;
 
     case "Bacon":
@@ -51,12 +51,6 @@ function adicionarItem(){
     }
 
     let total = quantidade * valorDoProduto;
-
-    //Validar de todas existem
-    if(!nome || !quantidade){
-        alert("Favor preencher os campos");
-        return;
-    }
 
     //  Criar a tabela, mas precisamente uma linha na tabela
     let tabela = document.getElementById("tabela").getElementsByTagName("tbody")[0];

@@ -8,40 +8,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="./script.js" defer></script>
 
 </head>
 <body>
-    <a href="../Menu/page.html">VOLTAR</a>
+    <a href="../index.html">VOLTAR</a>
     <h1>Estoque</h1>
         <!-- add o id -->
     <form>            
-        <select class="form-select" aria-label="Default select example" id="nome"> 
+        <select class="form-select" aria-label="Default select example" id="nome" required> 
             <option selected>Selecione uma opção:</option>
             <option value="Pão">Pão</option>
             <option value="Carne">Carne</option>
             <option value="Queijo">Queijo</option>
             <option value="Alface">Alface</option>
             <option value="Tomate">Tomate</option>
-            <option value="Abaacte">Tomate</option>
+            <option value="Abacate">Abacate</option>
             <option value="Bacon">Bacon</option>
             <option value="Refri">Refri</option>
         </select>
         
-        <input type="number" placeholder="Quantidade:" id="quantidade">
+        <input type="number" placeholder="Quantidade:" id="quantidade" required>
             
         <button type="submit">Adicionar Item</button>
     </form>
 
     <table id="tabela">
         <thead>
-            <tr>
-                <th>Nº Produto</th>
-                <th>Descrição</th>
-                <th>Valor</th>
-                <th>Quantidade</th>
-                <th>Total</th>
-            </tr>
+            <th>Nº Produto</th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Quantidade</th>
+            <th>Total</th>
         </thead>
         <tbody></tbody>
     </table>

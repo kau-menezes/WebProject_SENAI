@@ -152,7 +152,18 @@ td {
 
 tr {
     transition: 0.2s;
+    overflow: hidden;
+    animation: showUp 1s;
 }
 tr:hover {
     background-color: rgb(190, 189, 189);
+}
+
+@keyframes showUp {
+    from {
+        background-color: rgb(141, 214, 141);
+    }
+    to {
+        background-color: transparent;
+    }
 }
