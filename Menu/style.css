@@ -62,6 +62,6 @@ li:hover{
 
 }
 
-    /* body {
-        background-image: url("../Imagens/planodefundo.jpg");
-      } */
+li {
+    cursor: pointer;
+}

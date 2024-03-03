@@ -88,6 +88,8 @@ a:link {
     position: absolute;
     top: 100px;
     left: 30px;
+
+    transition: 0.2s;
 }
 
 a:hover {
@@ -117,7 +119,9 @@ button {
     font-weight: bold;
     font-family: 'Helvetica Neue', sans-serif;
 }
-
+a, button {
+    cursor: pointer;
+}
 
 
 table {
@@ -144,4 +148,11 @@ th {
 }
 td {
     border: 1px solid #111;
+}
+
+tr {
+    transition: 0.2s;
+}
+tr:hover {
+    background-color: rgb(190, 189, 189);
 }

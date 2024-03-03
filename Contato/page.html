@@ -4,43 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de Estoque</title>
-    <script src="../Contato/script.js"></script>
+    <script src="../Contato/script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
-
-    
 </head>
-
 <body>
     <a href="../Menu/page.html">VOLTAR</a>
 
-    <h1>Contato</h1>
+    <form>
+        <h1>Contato</h1>
 
-    <h2>Insira os dados iniciais para envio</h2>
+        <h2>Insira os dados iniciais para envio</h2>
 
-    <label for="nome">Seu nome:</label>
-    <input type="text" id="nome" placeholder="Digite seu nome:">
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome:" required>
 
-    <!-- <br><br> -->
 
-    <label for="observações"> Digite sua observação:</label>
-    <textarea id="mensagem" placeholder="Digite sua observação:"></textarea>  
+        <label for="observações"> Digite sua observação:</label>
+        <textarea id="mensagem" placeholder="Digite sua observação:" required></textarea>  
 
-    <!-- <br><br> -->
 
-    <button onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
+        <button type="button" onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
 
-    <!-- <br><br> -->
-
-    <p>Nome: <span id="confNome"></span></p>
-    <p>Observação: <span id="confMsg"></span></p>
-    <p>Data: <span id="confDate"></span></p>
-    
-    <!-- <br><br> -->
-
-    <button onclick="enviar()">Enviar Mensagem</button>
-
+        <div>
+            <p>Nome: <span id="confNome"></span></p>
+            <p>Observação: <span id="confMsg"></span></p>
+            <p>Data: <span id="confDate"></span></p>
+        </div>
+        
+        <button type="submit">Enviar Mensagem</button>
+    </form>
 </body>
 </html>
